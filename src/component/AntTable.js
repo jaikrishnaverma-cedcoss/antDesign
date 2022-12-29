@@ -1,5 +1,6 @@
 import { Table } from 'antd'
 import React, { useEffect, useState } from 'react'
+import SelectTable from './SelectTable'
 
 const AntTable = () => {
   const [data, setData] = useState()
@@ -91,6 +92,8 @@ const AntTable = () => {
     <div className="full">
       <div className="w80">
         <h2>Task 1</h2>
+        <SelectTable/>
+        <h2>Table (With Api)</h2>
         <Table
           columns={columns}
           expandable={{
